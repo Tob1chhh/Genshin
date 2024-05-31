@@ -1,0 +1,267 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,700;1,400&display=swap"); /* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  font-family: "Times New Roman", Times, serif;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  min-height: 100vh;
+  background-color: #000;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+}
+header .menu {
+  width: 100%;
+  height: 100%;
+  margin: 70px 0 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ------------------------------------------------------- */
+.menu a {
+  position: relative;
+  font-size: 32px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu .item-menu__pyro:before {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  right: 14px;
+  top: -60px;
+  background: url("../images/Genshin/symbols/pyro.png") top left/60px 60px no-repeat;
+}
+
+.menu .item-menu__hydro:before {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  right: 27px;
+  top: -60px;
+  background: url("../images/Genshin/symbols/hydro.png") top left/60px 60px no-repeat;
+}
+
+.menu .item-menu__anemo:before {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  right: 27px;
+  top: -60px;
+  background: url("../images/Genshin/symbols/anemo.png") top left/60px 60px no-repeat;
+}
+
+.menu .item-menu__electro:before {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  right: 44px;
+  top: -60px;
+  background: url("../images/Genshin/symbols/electro.png") top left/60px 60px no-repeat;
+}
+
+.menu .item-menu__dendro:before {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  right: 37px;
+  top: -60px;
+  background: url("../images/Genshin/symbols/dendro.png") top left/60px 60px no-repeat;
+}
+
+.menu .item-menu__cryo:before {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  right: 15px;
+  top: -60px;
+  background: url("../images/Genshin/symbols/cryo.png") top left/60px 60px no-repeat;
+}
+
+.menu .item-menu__geo:before {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  right: 3px;
+  top: -60px;
+  background: url("../images/Genshin/symbols/geo.png") top left/60px 60px no-repeat;
+}
+
+.menu .item-menu__pyro:hover:before {
+  filter: drop-shadow(2px 2px 3px rgb(255, 40, 0));
+  transition: box-shadow 0.5s;
+}
+.menu .item-menu__pyro:hover {
+  color: rgb(255, 160, 85);
+}
+
+.menu .item-menu__hydro:hover:before {
+  filter: drop-shadow(2px 2px 3px rgb(0, 165, 255));
+  transition: box-shadow 0.5s;
+}
+.menu .item-menu__hydro:hover {
+  color: rgb(135, 215, 255);
+}
+
+.menu .item-menu__anemo:hover:before {
+  filter: drop-shadow(2px 2px 3px rgb(95, 185, 115));
+  transition: box-shadow 0.5s;
+}
+.menu .item-menu__anemo:hover {
+  color: rgb(135, 255, 160);
+}
+
+.menu .item-menu__electro:hover:before {
+  filter: drop-shadow(2px 2px 3px rgb(105, 0, 255));
+  transition: box-shadow 0.5s;
+}
+.menu .item-menu__electro:hover {
+  color: rgb(185, 145, 255);
+}
+
+.menu .item-menu__dendro:hover:before {
+  filter: drop-shadow(2px 2px 3px rgb(150, 235, 80));
+  transition: box-shadow 0.5s;
+}
+.menu .item-menu__dendro:hover {
+  color: rgb(150, 235, 80);
+}
+
+.menu .item-menu__cryo:hover:before {
+  filter: drop-shadow(2px 2px 3px rgb(155, 210, 225));
+  transition: box-shadow 0.5s;
+}
+.menu .item-menu__cryo:hover {
+  color: rgb(155, 210, 225);
+}
+
+.menu .item-menu__geo:hover:before {
+  filter: drop-shadow(2px 2px 3px rgb(255, 185, 0));
+  transition: box-shadow 0.5s;
+}
+.menu .item-menu__geo:hover {
+  color: rgb(255, 185, 0);
+}
+/* ------------------------------------------------------- */
+
+.list_heroes {
+  width: 100%;
+  height: 100%;
+  margin-top: 120px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero {
+  border: 1px solid #fff;
+  width: 30%;
+  height: 60%;
+  margin-top: 20px;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+}
+.hero a {
+  color: #fff;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}

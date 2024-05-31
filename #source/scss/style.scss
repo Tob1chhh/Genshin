@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,700;1,400&display=swap');
+
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+body { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+// !Логотип Genshin
+.logo {
+    position: relative;
+    width: 100%;
+}
+.logo img { width: 200px; }
+.logo:hover { filter: drop-shadow(2px 2px 3px orange); }
+// !Логотип Genshin
+
+header {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding: 20px 50px;
+    text-align: center;
+    .menu { margin: 50px 0; padding-top: 40px; display: inline-block; }
+}
+
+.menu a { 
+    position: relative;
+    font-size: 32px;
+    text-decoration: none; 
+    color: #fff;
+}
+
+// --------------------------------------------------------------------------------------------------------------- //
+
+// !Отступы между айтемами
+.menu a:nth-child(1) { margin-right: 50px; }
+.menu a:nth-child(2) { margin-left: 50px; margin-right: 42px; }
+.menu a:nth-child(3) { margin-left: 42px; margin-right: 35px; }
+.menu a:nth-child(4) { margin-left: 35px; margin-right: 32px; }
+.menu a:nth-child(5) { margin-left: 32px; margin-right: 46px; }
+.menu a:nth-child(6) { margin-left: 46px; margin-right: 62px; }
+.menu a:nth-child(7) { margin-left: 62px; }
+// !Отступы между айтемами
+
+// !Для всех a:after
+.menu a:after {
+    content: '';
+    position: absolute;
+    width: 100%; height: 753px;
+    left: 0; bottom: -2px;
+    z-index: 1;
+}
+// !Для всех a:after
+
+// !Первый архонт 
+.menu a:nth-child(1):after {
+    background: url('../images/Genshin/archonts/diluc.png') -400px center/ 844px no-repeat;
+    margin: 0 0 -760px -49px; //! лево - 48, право - 96
+    padding-right: 182px; //86 по правой грани
+    transition: 0.5s;
+}
+.menu a:nth-child(1):hover:after { 
+    z-index: 9; visibility: visible; 
+    width: 1450px; height: 690px; 
+    margin: 0 0 -755px -150px;
+    background: url('../images/Genshin/archonts/diluc.png') 0 0/ 844px no-repeat;
+    transition: 1s; transform: scale(1.2);
+    backdrop-filter: blur(5px) saturate(20%);
+}
+// !Первый архонт 
+
+// !Второй архонт 
+.menu a:nth-child(2):after {
+    background: url('../images/Genshin/archonts/mona.png') center/ 784px no-repeat;
+    margin: 0 0 -760px -35px; //! лево - 34, право - 68
+    padding-right: 181px; //113 по правой грани
+    transition: 0.5s;
+} 
+.menu a:nth-child(2):hover:after { 
+    z-index: 9; visibility: visible; 
+    width: 1300px; height: 690px; 
+    margin: 0 0 -754px -200px;
+    background: url('../images/Genshin/archonts/mona.png') 0 0/ 784px no-repeat;
+    transition: 1s; transform: scale(1.2);
+    backdrop-filter: blur(5px) saturate(20%);
+}
+// !Второй архонт 
+
+// !Третий архонт 
+.menu a:nth-child(3):after {
+    background: url('../images/Genshin/archonts/venti.png') center/ 720px no-repeat; 
+    margin: 0 0 -760px -33px; //! лево - 32, право - 64
+    padding-right: 182px; //118 по правой грани
+    transition: 0.5s;
+} 
+.menu a:nth-child(3):hover:after { 
+    z-index: 9; visibility: visible; 
+    width: 1250px; height: 690px; 
+    margin: 0 0 -750px -340px; 
+    background: url('../images/Genshin/archonts/venti.png') 120px 0/ 720px no-repeat; 
+    transition: 1s; transform: scale(1.2);
+    backdrop-filter: blur(5px) saturate(20%);
+}
+// !Третий архонт 
+
+// !Четвертый архонт 
+.menu a:nth-child(4):after {
+    background: url('../images/Genshin/archonts/raiden.png') center/ 700px no-repeat; 
+    margin: 0 0 -760px -20px; //! лево - 19, право - 38
+    padding-right: 182px; //144 по правой грани
+    transition: 0.5s;
+} 
+.menu a:nth-child(4):hover:after {
+    z-index: 9; visibility: visible; 
+    width: 1250px; height: 690px; 
+    margin: 0 0 -770px -550px; 
+    background: url('../images/Genshin/archonts/raiden.png') 280px 0/ 700px no-repeat; 
+    transition: 1s; transform: scale(1.2);
+    backdrop-filter: blur(5px) saturate(20%);
+}
+// !Четвертый архонт
+
+// !Пятый архонт
+.menu a:nth-child(5):after {
+    background: url('../images/Genshin/archonts/nahida.png') center/ 795px no-repeat;
+    margin: 0 0 -760px -26px; //! лево - 25, право - 50
+    padding-right: 183px; //133 по правой грани
+    transition: 0.5s;
+} 
+.menu a:nth-child(5):hover:after {
+    z-index: 9; visibility: visible; 
+    width: 1300px; height: 700px; 
+    margin: 0 0 -778px -800px; 
+    background: url('../images/Genshin/archonts/nahida.png') 450px 0/ 795px no-repeat;
+    transition: 1s; transform: scale(1.2);
+    backdrop-filter: blur(5px) saturate(20%);
+}
+// !Пятый архонт
+
+// !Шестой архонт
+.menu a:nth-child(6):after {
+    background: url('../images/Genshin/archonts/ganyu.png') center/ 710px no-repeat;
+    margin: 0 0 -760px -49px; //! лево - 48, право - 96
+    padding-right: 183px; //87 по правой грани
+    transition: 0.5s;
+}
+.menu a:nth-child(6):hover:after { 
+    z-index: 9; visibility: visible; 
+    width: 1350px; height: 690px; 
+    margin: 0 0 -770px -1000px;
+    background: url('../images/Genshin/archonts/ganyu.png') 630px 0/ 710px no-repeat;
+    transition: 1s; transform: scale(1.2);
+    backdrop-filter: blur(5px) saturate(20%);
+}
+// !Шестой архонт
+
+// !Седьмой архонт
+.menu a:nth-child(7):after {
+    background: url('../images/Genshin/archonts/zhongli.png') -170px center/ 593px no-repeat; 
+    margin: 0 0 -760px -59px; //! лево - 58, право - 116
+    padding-right: 182px; //66 по правой грани
+    transition: 0.5s;
+}
+.menu a:nth-child(7):hover:after {
+    z-index: 9; visibility: visible; 
+    width: 1400px; height: 690px; 
+    margin: 0 0 -757px -1250px; 
+    background: url('../images/Genshin/archonts/zhongli.png') 800px 0/ 593px no-repeat; 
+    transition: 1s; transform: scale(1.2); 
+    backdrop-filter: blur(5px) saturate(20%);
+}
+// !Седьмой архонт
+
+// --------------------------------------------------------------------------------------------------------------- //
+
+// !Элементы
+.menu .item-menu__pyro:before { 
+    content: ''; position: absolute; border-radius: 30px;
+    width: 60px; height: 60px; right: 14px; top: -60px; 
+    background: url('../images/Genshin/symbols/pyro.png') top left/ 60px 60px no-repeat;
+}
+.menu .item-menu__hydro:before { 
+    content: ''; position: absolute; border-radius: 30px;
+    width: 60px; height: 60px; right: 27px; top: -60px;
+    background: url('../images/Genshin/symbols/hydro.png') top left/ 60px 60px no-repeat;
+}
+.menu .item-menu__anemo:before { 
+    content: ''; position: absolute; border-radius: 30px;
+    width: 60px; height: 60px; right: 27px; top: -60px;
+    background: url('../images/Genshin/symbols/anemo.png') top left/ 60px 60px no-repeat;
+}
+.menu .item-menu__electro:before { 
+    content: ''; position: absolute; border-radius: 30px;
+    width: 60px; height: 60px; right: 44px; top: -60px;
+    background: url('../images/Genshin/symbols/electro.png') top left/ 60px 60px no-repeat;
+}
+.menu .item-menu__dendro:before { 
+    content: ''; position: absolute; border-radius: 30px;
+    width: 60px; height: 60px; right: 37px; top: -60px;
+    background: url('../images/Genshin/symbols/dendro.png') top left/ 60px 60px no-repeat;
+}
+.menu .item-menu__cryo:before { 
+    content: ''; position: absolute; border-radius: 30px;
+    width: 60px; height: 60px; right: 15px; top: -60px;
+    background: url('../images/Genshin/symbols/cryo.png') top left/ 60px 60px no-repeat;
+}
+.menu .item-menu__geo:before { 
+    content: ''; position: absolute; border-radius: 30px;
+    width: 60px; height: 60px; right: 3px; top: -60px;
+    background: url('../images/Genshin/symbols/geo.png') top left/ 60px 60px no-repeat;
+}
+// !Элементы
+
+// !Обводка элементов
+.menu .item-menu__pyro:hover:before { filter: drop-shadow(2px 2px 3px rgb(255, 40, 0)); transition: box-shadow 0.5s; }
+.menu .item-menu__hydro:hover:before { filter: drop-shadow(2px 2px 3px rgb(0, 165, 255)); transition: box-shadow 0.5s; }
+.menu .item-menu__anemo:hover:before { filter: drop-shadow(2px 2px 3px rgb(95, 185, 115));  transition: box-shadow 0.5s; }
+.menu .item-menu__electro:hover:before { filter: drop-shadow(2px 2px 3px rgb(105, 0, 255)); transition: box-shadow 0.5s; }
+.menu .item-menu__dendro:hover:before { filter: drop-shadow(2px 2px 3px rgb(150, 235, 80)); transition: box-shadow 0.5s; }
+.menu .item-menu__cryo:hover:before { filter: drop-shadow(2px 2px 3px rgb(155, 210, 225)); transition: box-shadow 0.5s; }
+.menu .item-menu__geo:hover:before { filter: drop-shadow(2px 2px 3px rgb(255, 185, 0)); transition: box-shadow 0.5s; }
+// !Обводка элементов
+
+// --------------------------------------------------------------------------------------------------------------- //
